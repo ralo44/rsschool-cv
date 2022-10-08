@@ -24,7 +24,8 @@ I like challenges that make me a better developer and once I feel like part of a
 * JavaScript
 * TypeScript
 * Git
-
+* Angular
+* Jest
 ****
 
 ##### **Example of code** #####
