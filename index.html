@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Rangel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+    <header>
+        <div class="container header">
+            <div class="header-wrapper">
+                <h1 class="header-h1">Omar Rangel </h1>
+                <span class="small"> Front End Developer</span>
+            </div>
+            <img src="./assets/dev.png" alt="Dev image" class="img-header">
+            <nav>
+                <ul class="nav-ul">
+                    <li class="nav-item"><a class="link-to" href="#contacts">Contacts</a></li>
+                    <li class="nav-item"><a class="link-to" href="#skills">Skills</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container main">
+            <section class="section">
+                <h2 class="h2-style">About me:</h2>
+                <p class="content">Passionate about data and technology, eager to learn, hard-working, focused on
+                    Front-End Development. I like challenges that make me a
+                    better developer and once I feel like part of a work team, always trying to
+                    learn and implement my knowledge.</p>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="h2-style">Contacts:</h2>
+                <ul>
+                    <li class="content">rangellomar4@gmail.com</li>
+                    <li class="content">33-11</li>
+                </ul>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="h2-style">Skills:</h2>
+                <ul>
+                    <li class="content">HTML</li>
+                    <li class="content">JavaScript</li>
+                    <li class="content">TypeScript</li>
+                    <li class="content">CSS</li>
+                    <li class="content">Git</li>
+                    <li class="content">Angular</li>
+                    <li class="content">Jest</li>
+                </ul>
+
+            </section>
+            <section class="section">
+                <h2 class="h2-style">Example of code:</h2>
+                <pre>
+                  <code class="code">
+                    function toCamelCase(str){
+                        let slashType = str.includes('-') ? '-' : '_'
+                          let typeInitial =
+                          str.charAt(0) === str.charAt(0).toUpperCase() ? 'uppercase' : 'camelcase'
+                          let array = str.split(slashType)
+                          let newarray = array.map((elem, index){
+                              if (index === 0) {
+                                  if (typeInitial === 'camelcase') {
+                                      return elem.charAt(0).toLowerCase() + elem.slice(1)
+                                  }
+                                  return elem
+                              }
+                              return elem.charAt(0).toUpperCase() + elem.slice(1)
+                          })
+                          return newarray.join('')
+                      }
+                  </code>
+                </pre>
+            </section>
+            <section class="section">
+                <h2 class="h2-style">Education:</h2>
+                <p class="content">University of Guadalajara</p>
+            </section>
+            <section class="section">
+                <h2 class="h2-style">Courses:</h2>
+                <ul>
+                    <li class="content">2021 – Azure Fundamentals Certification</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2 class="h2-style">Projects:</h2>
+                <ul>
+                    <li class="content"><a class="link" target="_blank"
+                            href="https://draneriotorrinomerida.netlify.app/">Medical WebSite</a></li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2 class="h2-style">Language:</h2>
+                <ul>
+                    <li class="content">Spanish</li>
+                    <li class="content">English (B2 level)</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container footer">
+            <a href="https://github.com/ralo44"><img class="footer-logo" src="./assets/GitHub-logo.png"
+                    alt="git-hub"></a>
+            <p class="footer-content">October/2022</p>
+            <a href="https://rs.school/js-en/"><img class="footer-logo" src="./assets/rs_school-og.png"
+                    alt="RSSchool"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
